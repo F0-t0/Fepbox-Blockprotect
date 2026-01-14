@@ -1,0 +1,29 @@
+groups:
+  valuable_blocks:
+    - DIAMOND_BLOCK
+    - EMERALD_BLOCK
+  glass:
+    - GLASS
+    - GLASS_PANE
+
+rules:
+  example_global_valuable:
+    scope:
+      type: GLOBAL
+    blocks:
+      - DIAMOND_BLOCK
+      - "#valuable_blocks"
+    flags:
+      break: true
+      explosion: true
+      piston: true
+      fire: true
+      fluids: true
+    bypass:
+      permissions:
+        - fepbox.blockprotect.bypass
+      gamemodes:
+        - CREATIVE
+      players: []
+      tools: []
+

@@ -1,0 +1,23 @@
+name: Fepbox-BlockProtect
+version: 1.0.0
+main: pl.fepbox.blockprotect.FepboxBlockProtectPlugin
+api-version: '1.21'
+description: Advanced, configurable block protection plugin
+author: Fepbox
+
+commands:
+  bp:
+    description: Fepbox BlockProtect admin commands
+    usage: /bp <subcommand>
+
+permissions:
+  fepbox.blockprotect.admin:
+    description: Allows using all admin commands of Fepbox-BlockProtect
+    default: op
+  fepbox.blockprotect.reload:
+    description: Allows reloading Fepbox-BlockProtect configuration
+    default: op
+  fepbox.blockprotect.bypass:
+    description: Allows bypassing protection rules when configured
+    default: false
+
